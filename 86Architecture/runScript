@@ -1,0 +1,17 @@
+#!/bin/bash
+# Author: Frentzen Siauwtama
+# Creation Date: Wednesday, 22 June 2022
+# Description: This Script is to compile and execute the written assembly fil which only works with x86 architecture asm file.
+
+echo " "
+echo "Welcome to the automatic Assembly x86 architecture automatic debuger and compiler :)"
+echo "Please enter the file name"
+read fileNames
+echo File name has been inputed as $fileNames
+echo " "
+
+nasm -f elf32 $fileNames -o file.o
+ld -m elf_i386 file.o -o fileName
+./fileName
+echo $?
+echo "Exit Status value is "
