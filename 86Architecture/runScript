@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Author: Frentzen Siauwtama
 # Creation Date: Wednesday, 22 June 2022
 # Description: This Script is to compile and execute the written assembly fil which only works with x86 architecture asm file.
